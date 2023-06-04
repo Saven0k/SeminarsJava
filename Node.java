@@ -1,23 +1,12 @@
 
 
-public class Node <E> {
-    E value;
-    Node<E> nextNode;
-    Node<E> previousNode;
+public class Node <K, V>{
+    K key;
+    V value;
+    Node<K, V> nextnode;
 
-    public void setNext(Node nextNode){
-        this.nextNode = nextNode;
-    }
-
-    public void setValue(E value){
+    public Node(K key, V value) {
+        this.key = key;
         this.value = value;
-    }
-
-    public E getValue(){
-        return value;
-    }
-
-    public Node getNext(){
-        return nextNode;
     }
 }
